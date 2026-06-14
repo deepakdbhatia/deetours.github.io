@@ -233,3 +233,99 @@ flex-direction:column;
 }
 
 }
+/* WHY DEETOURS */
+
+#why-deetours {
+
+padding:120px 8%;
+
+background:
+linear-gradient(
+180deg,
+#eef3ea 0%,
+#f8f6f1 100%
+);
+
+}
+
+.section-header {
+
+text-align:center;
+max-width:800px;
+margin:auto auto 70px auto;
+
+}
+
+.section-header h2 {
+
+font-size:3rem;
+color:#1F4D3A;
+margin-bottom:20px;
+
+}
+
+.section-header p {
+
+font-size:1.2rem;
+color:#555;
+
+}
+
+.feature-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.feature-card {
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.08);
+
+transition:all .3s ease;
+
+}
+
+.feature-card:hover {
+
+transform:translateY(-8px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.12);
+
+}
+
+.icon {
+
+font-size:2.8rem;
+
+margin-bottom:20px;
+
+}
+
+.feature-card h3 {
+
+color:#1F4D3A;
+
+margin-bottom:15px;
+
+}
+
+.feature-card p {
+
+color:#666;
+
+line-height:1.7;
+
+}
