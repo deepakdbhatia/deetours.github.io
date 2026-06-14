@@ -339,7 +339,9 @@ line-height:1.7;
 
 }
 
+/* ===================================== */
 /* GUIDE SECTION */
+/* ===================================== */
 
 #guide {
 
@@ -350,6 +352,18 @@ linear-gradient(
 135deg,
 rgba(88,124,87,0.06),
 rgba(201,151,43,0.04)
+);
+
+background-image:
+radial-gradient(
+circle at 20% 20%,
+rgba(88,124,87,.05),
+transparent 300px
+),
+radial-gradient(
+circle at 80% 80%,
+rgba(201,151,43,.05),
+transparent 300px
 );
 
 }
@@ -371,7 +385,7 @@ align-items:center;
 
 width:100%;
 
-border-radius:25px;
+border-radius:24px;
 
 box-shadow:
 0 20px 50px rgba(0,0,0,0.15);
@@ -382,7 +396,7 @@ box-shadow:
 
 display:inline-block;
 
-padding:8px 16px;
+padding:8px 18px;
 
 background:#1F4D3A;
 
@@ -390,9 +404,9 @@ color:white;
 
 border-radius:25px;
 
-font-size:.9rem;
-
 margin-bottom:20px;
+
+font-size:.9rem;
 
 }
 
@@ -400,19 +414,19 @@ margin-bottom:20px;
 
 font-size:3rem;
 
-color:#1F4D3A;
-
 margin-bottom:25px;
+
+color:#1F4D3A;
 
 }
 
 .guide-content p {
 
-margin-bottom:20px;
-
 font-size:1.1rem;
 
 line-height:1.8;
+
+margin-bottom:18px;
 
 color:#444;
 
@@ -435,7 +449,7 @@ margin-top:30px;
 
 background:white;
 
-padding:15px;
+padding:16px;
 
 border-radius:12px;
 
@@ -444,21 +458,124 @@ box-shadow:
 
 }
 
+
+/* ===================================== */
+/* ADVENTURE SECTION */
+/* ===================================== */
+
+#adventure {
+
+padding:120px 8%;
+
+background:#f8f6f1;
+
+}
+
+.adventure-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.adventure-card {
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.08);
+
+transition:all .3s ease;
+
+}
+
+.adventure-card:hover {
+
+transform:translateY(-10px);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.15);
+
+}
+
+.adventure-card img {
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+}
+
+.adventure-content {
+
+padding:30px;
+
+}
+
+.adventure-content h3 {
+
+font-size:1.8rem;
+
+margin-bottom:10px;
+
+color:#1F4D3A;
+
+}
+
+.distance {
+
+display:inline-block;
+
+padding:8px 14px;
+
+background:#eef3ea;
+
+border-radius:20px;
+
+margin-bottom:15px;
+
+font-weight:600;
+
+color:#1F4D3A;
+
+}
+
+.adventure-content p {
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+
+/* MOBILE */
+
 @media(max-width:900px){
 
-.guide-container {
+.guide-container{
 
 grid-template-columns:1fr;
 
 }
 
-.guide-content h2 {
+.guide-content h2{
 
-font-size:2.3rem;
+font-size:2.2rem;
 
 }
 
-.guide-highlights {
+.guide-highlights{
 
 grid-template-columns:1fr;
 
