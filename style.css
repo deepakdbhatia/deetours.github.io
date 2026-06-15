@@ -26,6 +26,231 @@ color:#222;
 
 }
 
+/* ===================================== */
+/* CONTACT */
+/* ===================================== */
+
+#contact {
+
+padding:120px 8%;
+
+background:
+linear-gradient(
+180deg,
+#f5f1e8,
+#eef3ea
+);
+
+}
+
+.contact-container {
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:60px;
+
+align-items:start;
+
+}
+
+.contact-details {
+
+margin-top:30px;
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.contact-details a {
+
+color:#1F4D3A;
+font-weight:600;
+
+}
+
+.contact-form form {
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:white;
+
+box-shadow:
+0 3px 10px rgba(0,0,0,0.08);
+
+}
+
+.contact-form button {
+
+background:#1F4D3A;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+border-radius:12px;
+
+font-size:1rem;
+
+cursor:pointer;
+
+}
+
+/* ===================================== */
+/* FOOTER */
+/* ===================================== */
+
+footer {
+
+background:#10261d;
+
+color:white;
+
+padding:70px 8%;
+
+text-align:center;
+
+}
+
+.footer-logo {
+
+height:90px;
+
+margin-bottom:20px;
+
+}
+
+.footer-links {
+
+margin:30px 0;
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a {
+
+color:white;
+
+text-decoration:none;
+
+}
+
+/* ===================================== */
+/* WHATSAPP */
+/* ===================================== */
+
+.floating-whatsapp {
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+width:65px;
+height:65px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:1.8rem;
+
+background:#25D366;
+
+border-radius:50%;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.25);
+
+z-index:1000;
+
+}
+
+/* ===================================== */
+/* COOKIE */
+/* ===================================== */
+
+#cookie-banner {
+
+position:fixed;
+
+bottom:0;
+left:0;
+right:0;
+
+background:#1F4D3A;
+
+color:white;
+
+padding:15px;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+gap:15px;
+
+flex-wrap:wrap;
+
+z-index:2000;
+
+}
+
+#cookie-banner button {
+
+padding:8px 15px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.contact-container {
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 .navbar{
 
 position:fixed;
